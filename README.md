@@ -12,4 +12,4 @@
 
 # Hackathon Challenge for YQuantum 2025 - Wildfire Response 
 To get started with this challenge, please read [TahoeQuantumChallenge.ipynb](TahoeQuantumChallenge.ipynb). 
-For help setting up an environment please see [qbraid_instructions.ipynb](qbraid_instructions.ipynb).
+For help setting up an environment please see [qbraid_instructions.ipynb](qbraid_instructions.ipynb).For help setting up an environment please see [qbraid_instructions.ipynb](qbraid_instructions.ipynb).
