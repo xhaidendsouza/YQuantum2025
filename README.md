@@ -1,2 +1,1 @@
-# YQuantum2025
-# Tahoe Computing: Wild Fire Response/Resource Allocation
+# YQuantum2025: Tahoe Quantum Wild Fire Response/Resource Allocation
