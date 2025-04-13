@@ -6,8 +6,13 @@ Notes:
 
 
 Model:
-We have a grid of locations, where each box x_n in the grid is assigned a category such as deep forest, forest edge, housing
-H_resource1 = w_1 x_1 + w_2 x_2 + w_3 x_3 + ... + w_n x_n
+We have a grid of locations of size n x n, where each box x_ij in the grid is assigned a category (see below). We have a Hamiltonian H_r for each resource r.
+H_r = w_11 x_11 + w_12 x_12 + w_13 x_13 + ... + w_ij x_ij
+
+One variable per location (grid element):
+* 0 - do NOT send the resource r there
+* 1 - send resource r there
+
 weights are calculated from a combination of factors. w = C_1 Deaths + C_2 Monies, where C_1 and C_2 are some constants. The category of land effects this.
 It costs more money to stop a deep forest fire. Places with houses would have a high weight of deaths. The second thing that effects this is risk of fire to spread.
 Adjacent fire and directional fire.
@@ -17,21 +22,22 @@ Adjacent fire and directional fire.
 Fire chief should be able to select a strategy, and that strategy tunes the weights accordingly. Stopping it early could increase weights of fighting it early in deep forest
 before it spreads
 
+
 Categories:
-1. H - Housing
+1. H - Homes (any number of people)
 2. D - Deep forest
 3. E - Edge forest
 
-Properties:
-1. On fire
-2. High risk
-3. Low risk
-4. No risk
+Properties per cell (stored as a dictionary per cell):
+1. Fire risk (from 0 being no chance of fire to 1 being actively on fire, continuous)
+2. Number of people (>= 0, discrete)
 
 Resources:
-1. Air support
+1. Air support 
 2. Ground crews
 3. Controlled burns crews / fire lines
+
+We will have 
 
 
 Limitations & Future Things to Do:
@@ -40,6 +46,7 @@ Limitations & Future Things to Do:
 * Real-time update (fire over time)
 * Fire risk
 * More categories & Properties
+* Scale of distance (how big is each block?)
 
 
 
