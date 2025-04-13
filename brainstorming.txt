@@ -17,7 +17,7 @@ weights are calculated from a combination of factors. w = C_1 Deaths + C_2 Monie
 It costs more money to stop a deep forest fire. Places with houses would have a high weight of deaths. The second thing that effects this is risk of fire to spread.
 Adjacent fire and directional fire.
 
-
+Weights are calculated automatically, and each cell doesn't have a unique weight, rather each *type* of cell (H, D, E; fire risk, population) has its own type of weight calculated via manually-set multipliers.
 
 Fire chief should be able to select a strategy, and that strategy tunes the weights accordingly. Stopping it early could increase weights of fighting it early in deep forest
 before it spreads
@@ -30,7 +30,7 @@ Categories:
 
 Properties per cell (stored as a dictionary per cell):
 1. Fire risk (from 0 being no chance of fire to 1 being actively on fire, continuous)
-2. Number of people (>= 0, discrete)
+2. Population (number of people >= 0, discrete)
 
 Resources:
 1. Air support 
