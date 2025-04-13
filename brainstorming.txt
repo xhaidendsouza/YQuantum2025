@@ -1,0 +1,45 @@
+https://www.journals.uchicago.edu/doi/epdf/10.1086/719426
+Notes:
+1. States that wildfires tend to stop spreading as they approach homes, particularly homes of high value.
+2. Fire managers usually try to minimize the sum of the cost of supression and the expected damages.
+3. 
+
+
+Model:
+We have a grid of locations, where each box x_n in the grid is assigned a category such as deep forest, forest edge, housing
+H_resource1 = w_1 x_1 + w_2 x_2 + w_3 x_3 + ... + w_n x_n
+weights are calculated from a combination of factors. w = C_1 Deaths + C_2 Monies, where C_1 and C_2 are some constants. The category of land effects this.
+It costs more money to stop a deep forest fire. Places with houses would have a high weight of deaths. The second thing that effects this is risk of fire to spread.
+Adjacent fire and directional fire.
+
+
+
+Fire chief should be able to select a strategy, and that strategy tunes the weights accordingly. Stopping it early could increase weights of fighting it early in deep forest
+before it spreads
+
+Categories:
+1. H - Housing
+2. D - Deep forest
+3. E - Edge forest
+
+Properties:
+1. On fire
+2. High risk
+3. Low risk
+4. No risk
+
+Resources:
+1. Air support
+2. Ground crews
+3. Controlled burns crews / fire lines
+
+
+Limitations & Future Things to Do:
+* More fine-grain detail
+* Intensity of fires
+* Real-time update (fire over time)
+* Fire risk
+* More categories & Properties
+
+
+
